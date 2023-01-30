@@ -9,8 +9,4 @@
     <None Include="wwwroot\index.html" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="wwwroot\img\" />
-  </ItemGroup>
-
 </Project>
