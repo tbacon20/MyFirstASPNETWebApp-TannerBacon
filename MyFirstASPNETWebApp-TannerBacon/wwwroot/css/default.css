@@ -1,3 +1,44 @@
 ﻿ul {
     list-style: none;
 }
+
+.btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.output {
+    margin-top: 10px !important;
+}
+
+form {
+    overflow: hidden;
+    width: 400px;
+}
+
+.center-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    float: right;
+    clear: both;
+}
+
+#finalgrade {
+    margin: 15px !important;
+    padding: 15px;
+    border-radius: 10px;
+    border-color: green;
+}
+
+form {
+    margin: 50px;
+    padding: 15px;
+    border-radius: 10px;
+    border-color: cornflowerblue;
+    border-width: 2px;
+    border-style: solid;
+}
