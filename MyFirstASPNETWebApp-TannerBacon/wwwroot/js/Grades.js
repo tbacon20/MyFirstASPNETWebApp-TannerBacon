@@ -2,7 +2,8 @@
 
     var finalGrade;
     var letterGrade = 'A';
-    
+
+    // This calculated the final grade percentage based on the weights in the syllabus
     finalGrade = ($("#assignments").val() * 0.5) +
         ($("#groupproject").val() * 0.1) +
         ($("#quizzes").val() * 0.1) +
@@ -10,6 +11,8 @@
         ($("#final").val() * 0.1) + 
         ($("#intex").val() * 0.1);
 
+    // This will define a letter grade and grade color (greeen, yellow, or red) based on 
+    // the final grade percentage
     if (finalGrade >= 94) {
         letterGrade = 'A';
         $("#finalgrade").attr("class", "bg-success text-white");
@@ -48,8 +51,12 @@
         $("#finalgrade").attr("class","bg-danger text-white");
     }
 
-    //$("#gradeform").append("Final grade: " + finalGrade.toString());
-    //alert("Final grade: " + $("#assignments").val());
+
+    // This will use jquery to select and update the text for the final grade class
     $("#finalgrade").text("Final Grade: " + finalGrade.toString() + "% " + letterGrade);
 
+    // These are some other options for implementing the final grade I explored
+
+    //$("#gradeform").append("Final grade: " + finalGrade.toString());
+    //alert("Final grade: " + $("#assignments").val());
 })
