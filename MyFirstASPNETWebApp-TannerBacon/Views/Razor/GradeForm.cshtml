@@ -1,0 +1,45 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Bacon Grade-inator";
+}
+
+@model GradeFormModel
+
+<div class="p-5 bg-light center-form">
+    <form id="gradeform" class="bg-secondary" method="post">
+        <h2>Grade Calculator</h2>
+        <label>Assignments: </label>
+        <input id="assignments" value="" class='col-md-3 input' asp-for="Assignments" />
+        <br />
+
+        <label>Group Project: </label>
+        <input id="groupproject" value="" class='col-md-3 input' asp-for="Projects"/>
+        <br />
+
+        <label>Quizzes: </label>
+        <input id="quizzes" value="" class='col-md-3 input' asp-for="Quizzes"/>
+        <br />
+
+        <label>Midterm Exam: </label>
+        <input id="midterm" value="" class='col-md-3 input' asp-for="Midterm"/>
+        <br />
+
+        <label>Final Exam: </label>
+        <input id="final" value="" class='col-md-3 input' asp-for="Final"/>
+        <br />
+
+        <label>INTEX: </label>
+        <input id="intex" value="" class='col-md-3 input' asp-for="Intex"/>
+        <br />
+
+        <input type="submit" name="button" value="Calculate Grade" id="btnSend" class='btn-primary btn-block btn' />
+        <br />
+
+        <div asp-validation-summary="All"></div>
+
+    </form>
+</div>
+
+<script src="js/Grades.js"></script>

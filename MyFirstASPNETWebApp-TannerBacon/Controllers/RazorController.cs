@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MyFirstASPNETWebApp_TannerBacon.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,18 @@ namespace MyFirstASPNETWebApp_TannerBacon.Controllers
             // throw new IndexOutOfRangeException();
             
             // will end up doing something like return View(GradeForm);
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult GradeForm()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult GradeForm(GradeFormModel model)
+        {
             return View();
         }
     }

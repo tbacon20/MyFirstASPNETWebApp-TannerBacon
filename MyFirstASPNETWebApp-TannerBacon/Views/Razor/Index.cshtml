@@ -2,13 +2,15 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
-    ViewData["Title"] = "Bacon Grade-inator";
+    ViewData["Title"] = "Bacon Home Page";
 }
+
+@model GradeFormModel;
 
 <div class="p-5 text-center bg-secondary">
     <h1 class="mb-3">Tanner Bacon</h1>
     <h4 class="mb-3">Mission 4</h4>
-    <a class="btn btn-primary" href="#gradeform" role="button">Go to Grade Calculator</a>
+    <a class="btn btn-primary" asp-controller="Razor" asp-action="GradeForm" role="button">Go to Grade Calculator</a>
 </div>
 
 <div class="p-5 text-center bg-light">
@@ -30,40 +32,3 @@
     </ul>
 </div>
 
-
-<div class="p-5 bg-light center-form">
-    <form id="gradeform" class="bg-secondary">
-        <h2>Grade Calculator</h2>
-        <label>Assignments: </label>
-        <input id="assignments" value="" class='col-md-3 input' />
-        <br />
-
-        <label>Group Project: </label>
-        <input id="groupproject" value="" class='col-md-3 input' />
-        <br />
-
-        <label>Quizzes: </label>
-        <input id="quizzes" value="" class='col-md-3 input' />
-        <br />
-
-        <label>Midterm Exam: </label>
-        <input id="midterm" value="" class='col-md-3 input' />
-        <br />
-
-        <label>Final Exam: </label>
-        <input id="final" value="" class='col-md-3 input' />
-        <br />
-
-        <label>INTEX: </label>
-        <input id="intex" value="" class='col-md-3 input' />
-        <br />
-
-        <input type="button" name="name" value="Calculate Grade" id="btnSend" class='btn-primary btn-block btn' />
-        <br />
-
-        <h3 class="output" id="finalgrade"> Final Grade: </h3>
-
-    </form>
-</div>
-
-<script src="js/Grades.js"></script>
